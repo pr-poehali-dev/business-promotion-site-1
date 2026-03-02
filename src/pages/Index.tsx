@@ -482,7 +482,7 @@ export default function Index() {
               <div className="grid grid-cols-3 gap-4 mb-8">
                 {[
                   { value: "68ч", label: "Срок упаковки" },
-                  { value: "135+", label: "Проектов" },
+                  { value: "35+", label: "Проектов" },
                   { value: "5★", label: "Средний рейтинг" },
                 ].map((s) => (
                   <div key={s.label} className="rounded-2xl bg-white border border-border p-4 text-center">
