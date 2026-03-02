@@ -478,7 +478,7 @@ export default function Index() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-brand/5 blur-3xl pointer-events-none" />
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <div className="text-5xl mb-6">🎁</div>
-          <h2 className="font-display font-black text-3xl md:text-4xl lg:text-5xl text-white mb-5 leading-tight">
+          <h2 className="font-display font-black text-3xl md:text-4xl lg:text-5xl mb-5 leading-tight text-[#0084ff]">
             Попробуйте Алгоритм Новикова и получите персональный план роста
           </h2>
           <p className="font-body text-blue-100/60 text-base mb-10">
