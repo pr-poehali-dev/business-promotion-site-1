@@ -465,9 +465,7 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-14 items-start">
             <div>
               <p className="text-xs font-body font-semibold uppercase tracking-widest text-brand mb-4">Личная ответственность</p>
-              <h2 className="font-display font-black text-3xl md:text-4xl text-foreground mb-6 leading-tight">
-                Алгоритм работает, потому что я отвечаю за результат лично.
-              </h2>
+              <h2 className="font-display font-black text-3xl md:text-4xl text-foreground mb-6 leading-tight">Лично создал алгоритм благодаря которому привожу клиентов в свой офлайн бизнес</h2>
               <p className="font-body text-slate-700 text-base leading-relaxed mb-6">Новиков Иван - Маркетолог с опытом, счастливый отец  и любящий муж!
 </p>
 
