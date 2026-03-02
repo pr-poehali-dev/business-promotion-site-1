@@ -162,7 +162,7 @@ export default function Index() {
               </h1>
 
               <p className="font-body text-base md:text-lg text-blue-100/90 mb-10 leading-relaxed animate-fade-up-2">
-                Продвижение в картах, сайт под конверсию и системное управление репутацией.
+                Продвижение в картах, сайт под конверсию и системное управление репутацией
               </p>
 
               <div className="animate-fade-up-3">
@@ -176,7 +176,7 @@ export default function Index() {
                   Запустить рулетку и получить бонус
                 </a>
                 <p className="font-body text-xs text-blue-200/40 mt-4">
-                  Бесплатный аудит, скидки и полезные материалы для роста бизнеса.
+                  Бесплатный аудит, скидки и полезные материалы для роста бизнеса
                 </p>
               </div>
             </div>
@@ -274,7 +274,7 @@ export default function Index() {
             Что такое Алгоритм Новикова?
           </h2>
           <p className="font-body text-muted-foreground mb-10 text-base md:text-lg">
-            Иван лично объясняет систему: 3 направления, логика роста заявок и механика работы с отзывами.
+            Иван лично объясняет систему: 3 направления, логика роста заявок и механика работы с отзывами
           </p>
           <div className="relative rounded-3xl overflow-hidden bg-foreground aspect-video flex items-center justify-center border border-border shadow-2xl">
             <div className="absolute inset-0 dark-section grid-pattern" />
@@ -311,7 +311,7 @@ export default function Index() {
           </div>
           <div className="mt-10 text-center">
             <p className="font-body text-sm text-muted-foreground mb-5">
-              Перед получением бонуса пользователь оставляет контакт в Telegram — так формируется ваша база клиентов.
+              Перед получением бонуса пользователь оставляет контакт в Telegram — так формируется ваша база клиентов
             </p>
             <a
               href={TG_BOT_URL}
@@ -430,7 +430,7 @@ export default function Index() {
           <p className="text-xs font-body font-semibold uppercase tracking-widest text-brand mb-4">Колесо бонусов</p>
           <h2 className="font-display font-black text-3xl md:text-4xl text-foreground mb-4">Что можно выиграть</h2>
           <p className="font-body text-muted-foreground mb-12 text-base">
-            Крутите колесо в Telegram-боте и получайте реальную пользу для бизнеса.
+            Крутите колесо в Telegram-боте и получайте реальную пользу для бизнеса
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {BONUSES.map((b, i) => (
@@ -534,7 +534,7 @@ export default function Index() {
             <Icon name="Send" size={20} />
             Перейти в Telegram и запустить колесо
           </a>
-          <p className="font-body text-xs text-blue-200/30 mt-5">Бесплатно. Без обязательств.</p>
+          <p className="font-body text-xs text-blue-200/30 mt-5">Бесплатно — без обязательств</p>
         </div>
       </section>
 
@@ -580,7 +580,7 @@ export default function Index() {
             <div className="text-5xl mb-4">🎁</div>
             <h3 className="font-display font-black text-2xl text-foreground mb-3">Подождите!</h3>
             <p className="font-body text-muted-foreground mb-6">
-              Прежде чем уйти — получите бонус бесплатно. Крутите колесо и заберите подарок для вашего бизнеса.
+              Прежде чем уйти — получите бонус бесплатно. Крутите колесо и заберите подарок для вашего бизнеса
             </p>
             <a
               href={TG_BOT_URL}
