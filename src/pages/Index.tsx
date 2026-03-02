@@ -1,17 +1,17 @@
 import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
-const TG_BOT_URL = "https://t.me/algoritm_novikova_bot";
+const TG_BOT_URL = "https://t.me/LK_Reputation_bot";
 const PHOTO_IVAN = "https://cdn.poehali.dev/projects/b4046174-4b9b-4675-9db9-692367635694/bucket/d8b4c62b-9e5d-41ca-b755-d4791fef57d5.jpg";
 const PHOTO_FAMILY = "https://cdn.poehali.dev/projects/b4046174-4b9b-4675-9db9-692367635694/bucket/f52363d6-973e-4bc7-869c-64c7daa93ea9.JPG";
 
 const BONUSES = [
-  { label: "Бесплатный аудит", icon: "Search" },
-  { label: "Скидка 20%", icon: "Tag" },
-  { label: "Консультация", icon: "MessageCircle" },
-  { label: "Чек-лист", icon: "CheckSquare" },
-  { label: "Файл фишек", icon: "FileText" },
-  { label: "Разбор карточки", icon: "Map" },
+  { label: "30% скидки на 2й месяц", icon: "Tag" },
+  { label: "20% скидки на сайт", icon: "Globe" },
+  { label: "Бонусные отзывы 2ГИС", icon: "Star" },
+  { label: "Стратегия ТОП Яндекс Карты", icon: "MapPin" },
+  { label: "Стратегия ТОП 2ГИС", icon: "Map" },
+  { label: "Обучение по настройке", icon: "GraduationCap" },
 ];
 
 const STEPS = [
@@ -339,7 +339,7 @@ export default function Index() {
               <div className="mt-6 pt-6 border-t border-white/10">
                 <p className="font-display font-black text-2xl text-white mb-4">14 800 ₽</p>
                 <a
-                  href="https://t.me/novikov_ivan?text=%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%20%D0%9A%D0%B0%D1%80%D1%82%D1%8B%20%D0%B8%202%D0%93%D0%98%D0%A1%20%D0%B7%D0%B0%2068%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2"
+                  href="https://t.me/Evan_Novikov?text=%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%20%D0%9A%D0%B0%D1%80%D1%82%D1%8B%20%D0%B8%202%D0%93%D0%98%D0%A1%20%D0%B7%D0%B0%2068%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center px-5 py-3 rounded-xl bg-brand text-white font-display font-bold text-sm hover:opacity-90 transition-opacity"
@@ -366,7 +366,7 @@ export default function Index() {
               <div className="mt-6 pt-6 border-t border-white/10">
                 <p className="font-display font-black text-2xl text-white mb-4">14 800 ₽</p>
                 <a
-                  href="https://t.me/novikov_ivan?text=%D0%A1%D0%B0%D0%B9%D1%82%20%D0%B7%D0%B0%2068%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2"
+                  href="https://t.me/Evan_Novikov?text=%D0%A1%D0%B0%D0%B9%D1%82%20%D0%B7%D0%B0%2068%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center px-5 py-3 rounded-xl bg-brand text-white font-display font-bold text-sm hover:opacity-90 transition-opacity"
@@ -394,7 +394,7 @@ export default function Index() {
                 <p className="font-display font-black text-2xl text-white mb-1">от 35 000 ₽</p>
                 <p className="font-body text-xs text-blue-100/50 mb-4">Индивидуальный расчёт</p>
                 <a
-                  href="https://t.me/novikov_ivan?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D0%BF%D0%BE%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8E%20%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D1%86%D0%B8%D0%B5%D0%B9"
+                  href="https://t.me/Evan_Novikov?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D0%BF%D0%BE%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8E%20%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D1%86%D0%B8%D0%B5%D0%B9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center px-5 py-3 rounded-xl bg-brand text-white font-display font-bold text-sm hover:opacity-90 transition-opacity"
