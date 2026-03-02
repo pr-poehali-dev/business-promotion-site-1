@@ -139,7 +139,7 @@ export default function Index() {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/15 border border-blue-500/30 mb-8 animate-fade-up">
                 <div className="w-2 h-2 rounded-full bg-brand animate-pulse" />
-                <span className="text-xs font-body font-medium text-blue-300 uppercase tracking-widest">Алгоритм Новикова</span>
+                <span className="text-xs font-body font-medium uppercase tracking-widest text-[#000000]">Алгоритм Новикова</span>
               </div>
 
               <h1 className="font-display font-black text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-up-1">
