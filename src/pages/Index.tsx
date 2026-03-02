@@ -89,8 +89,8 @@ export default function Index() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-b border-border">
         <div className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
           <div className="flex flex-col leading-none">
-            <span className="font-display font-black text-foreground tracking-tight uppercase text-xl px-[11px]">Алгоритм</span>
-            <span className="font-display font-black text-brand tracking-tight uppercase text-2xl px-[1px] mx-0 my-0.5 py-0">Новикова</span>
+            <span className="font-display font-black text-foreground tracking-tight uppercase text-xl py-0 my-0 px-[7px]">Алгоритм</span>
+            <span className="font-display font-black text-brand tracking-tight uppercase text-2xl my-0 px-0 mx-0 py-0">Новикова</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((l) => (
