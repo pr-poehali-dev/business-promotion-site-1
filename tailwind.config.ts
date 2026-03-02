@@ -19,9 +19,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				display: ['Golos Text', 'sans-serif'],
-				body: ['IBM Plex Sans', 'sans-serif'],
-				sans: ['IBM Plex Sans', 'sans-serif'],
+				display: ['Montserrat', 'sans-serif'],
+				body: ['Golos Text', 'sans-serif'],
+				sans: ['Golos Text', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -75,20 +75,12 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
 				}
 			},
 			animation: {
