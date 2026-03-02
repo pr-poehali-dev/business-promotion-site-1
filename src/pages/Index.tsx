@@ -432,7 +432,7 @@ export default function Index() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <p className="font-display font-bold text-white text-sm">Семья — главная ценность</p>
-                  <p className="font-body text-white/70 text-xs mt-0.5">Именно поэтому я работаю на результат, а не на процесс</p>
+                  <p className="font-body text-xs mt-0.5 text-[#e6e3e3]">Именно поэтому я работаю на результат, а не на процесс</p>
                 </div>
               </div>
 
