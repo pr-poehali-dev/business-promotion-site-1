@@ -148,8 +148,17 @@ export default function Index() {
               </div>
 
               <h1 className="font-display font-black text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-up-1">
-                За <span className="text-brand text-glow">68 часов</span> упакую ваш бизнес так, чтобы Яндекс Карты и 2ГИС начали{" "}
-                <span className="text-brand">приводить клиентов</span>, а не просто показывать карточку.
+                За <span className="text-brand text-glow">68 часов</span> упакую ваш бизнес так, чтобы{" "}
+                <span className="relative inline-block">
+                  <span className="relative z-10 text-white">Яндекс&nbsp;Карты</span>
+                  <span className="absolute inset-0 -mx-1 rounded-md bg-brand/25 blur-[2px]" />
+                </span>
+                {" "}и{" "}
+                <span className="relative inline-block">
+                  <span className="relative z-10 text-white">2ГИС</span>
+                  <span className="absolute inset-0 -mx-1 rounded-md bg-brand/25 blur-[2px]" />
+                </span>
+                {" "}начали <span className="text-brand">приводить клиентов</span>, а не просто показывать карточку.
               </h1>
 
               <p className="font-body text-base md:text-lg text-blue-100/90 mb-10 leading-relaxed animate-fade-up-2">
@@ -321,8 +330,15 @@ export default function Index() {
       <section id="services" className="py-24 px-5 md:px-10 dark-section grid-pattern">
         <div className="max-w-6xl mx-auto">
           <p className="text-xs font-body font-semibold uppercase tracking-widest text-brand mb-4">3 направления</p>
-          <h2 className="font-display font-black text-3xl md:text-4xl text-white mb-14">Алгоритм Новикова</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="inline-block mb-14">
+            <h2 className="font-display font-black text-3xl md:text-4xl text-white relative">
+              <span className="relative z-10">Алгоритм Новикова</span>
+              <span className="absolute -inset-x-4 -inset-y-2 rounded-2xl bg-brand/15 border border-brand/30 blur-[1px]" />
+            </h2>
+          </div>
+          <div className="relative">
+            <div className="absolute -inset-4 rounded-3xl bg-brand/5 border border-brand/20" />
+            <div className="relative grid md:grid-cols-3 gap-6">
             <div className="card-hover rounded-2xl p-8 border border-blue-500/20 bg-white/5 backdrop-blur-sm flex flex-col">
               <div className="w-12 h-12 rounded-2xl bg-brand/20 flex items-center justify-center mb-6">
                 <Icon name="MapPin" size={22} className="text-brand" />
@@ -402,6 +418,7 @@ export default function Index() {
                   Получить расчёт
                 </a>
               </div>
+            </div>
             </div>
           </div>
         </div>
