@@ -481,9 +481,7 @@ export default function Index() {
           <h2 className="font-display font-black text-3xl md:text-4xl lg:text-5xl mb-5 leading-tight text-[#0084ff]">
             Попробуйте Алгоритм Новикова и получите персональный план роста
           </h2>
-          <p className="font-body text-base mb-10 font-normal text-[#1a1818]">
-            Бесплатный аудит, скидки и полезные материалы — всё через колесо бонусов.
-          </p>
+          <p className="font-body text-base mb-10 font-normal text-[#1a1818]">Бесплатный аудит, скидки и полезные материалы — всё через колесо бонусов</p>
           <a
             href={TG_BOT_URL}
             target="_blank"
@@ -501,8 +499,8 @@ export default function Index() {
       <footer className="py-8 px-5 md:px-10 bg-[#050a14] border-t border-blue-900/30">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
-            <span className="font-display font-black text-sm text-white uppercase">Алгоритм Новикова</span>
-            <span className="font-body text-xs text-blue-400/50 ml-2">— система роста заявок</span>
+            <span className="font-display font-black text-sm uppercase text-[#0084ff]">Алгоритм Новикова</span>
+            <span className="font-body text-xs ml-2 text-[#ffffff]">— система роста заявок</span>
           </div>
           <div className="flex items-center gap-6">
             {NAV_LINKS.map((l) => (
