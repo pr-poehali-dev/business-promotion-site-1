@@ -481,7 +481,7 @@ export default function Index() {
           <h2 className="font-display font-black text-3xl md:text-4xl lg:text-5xl mb-5 leading-tight text-[#0084ff]">
             Попробуйте Алгоритм Новикова и получите персональный план роста
           </h2>
-          <p className="font-body text-blue-100/60 text-base mb-10">
+          <p className="font-body text-base mb-10 font-normal text-[#1a1818]">
             Бесплатный аудит, скидки и полезные материалы — всё через колесо бонусов.
           </p>
           <a
