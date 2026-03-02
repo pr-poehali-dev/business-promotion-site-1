@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
 const TG_BOT_URL = "https://t.me/algoritm_novikova_bot";
-const PHOTO_URL = "https://cdn.poehali.dev/projects/b4046174-4b9b-4675-9db9-692367635694/files/fd600bc5-dfc8-42ac-a50c-4600cbad271a.jpg";
+const PHOTO_IVAN = "https://cdn.poehali.dev/projects/b4046174-4b9b-4675-9db9-692367635694/bucket/d8b4c62b-9e5d-41ca-b755-d4791fef57d5.jpg";
+const PHOTO_FAMILY = "https://cdn.poehali.dev/projects/b4046174-4b9b-4675-9db9-692367635694/bucket/f52363d6-973e-4bc7-869c-64c7daa93ea9.JPG";
 
 const BONUSES = [
   { label: "Бесплатный аудит", icon: "Search" },
@@ -130,24 +131,28 @@ export default function Index() {
       </header>
 
       {/* HERO */}
-      <section id="hero" className="relative pt-28 pb-20 px-5 md:px-10 overflow-hidden dark-section grid-pattern min-h-screen flex items-center">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-blue-600/10 blur-3xl pointer-events-none" />
-        <div className="absolute bottom-1/3 right-1/4 w-64 h-64 rounded-full bg-blue-500/8 blur-3xl pointer-events-none" />
+      <section id="hero" className="relative pt-28 pb-20 px-5 md:px-10 overflow-hidden min-h-screen flex items-center">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${PHOTO_IVAN})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#060d1e]/95 via-[#0a1628]/85 to-[#0a1628]/60" />
+        <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(rgba(0,132,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,132,255,0.04) 1px,transparent 1px)", backgroundSize: "40px 40px" }} />
 
         <div className="max-w-6xl mx-auto w-full relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/15 border border-blue-500/30 mb-8 animate-fade-up">
                 <div className="w-2 h-2 rounded-full bg-brand animate-pulse" />
-                <span className="text-xs font-body font-medium uppercase tracking-widest text-[#000000]">Алгоритм Новикова</span>
+                <span className="text-xs font-body font-medium uppercase tracking-widest text-blue-200">Алгоритм Новикова</span>
               </div>
 
-              <h1 className="font-display font-black text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-up-1">
+              <h1 className="font-playfair font-black text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-up-1" style={{fontFamily: '"Playfair Display", serif'}}>
                 За <span className="text-brand text-glow">68 часов</span> упакую ваш бизнес так, чтобы Яндекс Карты и 2ГИС начали{" "}
                 <span className="text-brand">приводить клиентов</span>, а не просто показывать карточку.
               </h1>
 
-              <p className="font-body text-base md:text-lg text-blue-100/70 mb-10 leading-relaxed animate-fade-up-2">
+              <p className="font-body text-base md:text-lg text-blue-100/90 mb-10 leading-relaxed animate-fade-up-2">
                 Продвижение в картах, сайт под конверсию и системное управление репутацией.
               </p>
 
@@ -410,16 +415,27 @@ export default function Index() {
       {/* TRUST */}
       <section id="trust" className="py-24 px-5 md:px-10 bg-background">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-14 items-center">
+          <div className="grid md:grid-cols-2 gap-14 items-start">
             <div>
               <p className="text-xs font-body font-semibold uppercase tracking-widest text-brand mb-4">Личная ответственность</p>
               <h2 className="font-display font-black text-3xl md:text-4xl text-foreground mb-6 leading-tight">
                 Алгоритм работает, потому что я отвечаю за результат лично.
               </h2>
-              <p className="font-body text-muted-foreground text-base leading-relaxed mb-8">
+              <p className="font-body text-slate-700 text-base leading-relaxed mb-6">
                 Я Иван Новиков — предприниматель, отец и счастливый муж.
                 Работаю системно и на долгосрочный результат.
               </p>
+
+              {/* Family values block */}
+              <div className="relative rounded-2xl overflow-hidden mb-8 h-52">
+                <img src={PHOTO_FAMILY} alt="Семья Новиковых" className="w-full h-full object-cover object-top" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <p className="font-display font-bold text-white text-sm">Семья — главная ценность</p>
+                  <p className="font-body text-white/70 text-xs mt-0.5">Именно поэтому я работаю на результат, а не на процесс</p>
+                </div>
+              </div>
+
               <div className="grid grid-cols-3 gap-4 mb-8">
                 {[
                   { value: "68ч", label: "Срок упаковки" },
@@ -428,7 +444,7 @@ export default function Index() {
                 ].map((s) => (
                   <div key={s.label} className="rounded-2xl bg-white border border-border p-4 text-center">
                     <div className="font-display font-black text-2xl text-brand">{s.value}</div>
-                    <div className="font-body text-xs text-muted-foreground mt-1">{s.label}</div>
+                    <div className="font-body text-xs text-slate-600 mt-1">{s.label}</div>
                   </div>
                 ))}
               </div>
@@ -444,7 +460,7 @@ export default function Index() {
             </div>
             <div className="relative">
               <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-muted">
-                <img src={PHOTO_URL} alt="Иван Новиков" className="w-full h-full object-cover" />
+                <img src={PHOTO_IVAN} alt="Иван Новиков" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-5 -left-5 bg-white border border-border rounded-2xl px-5 py-4 shadow-xl">
                 <div className="flex items-center gap-2">
