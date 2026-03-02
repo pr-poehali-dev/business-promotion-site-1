@@ -133,8 +133,8 @@ export default function Index() {
       {/* HERO */}
       <section id="hero" className="relative pt-28 pb-20 px-5 md:px-10 overflow-hidden min-h-screen flex items-center">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110"
-          style={{ backgroundImage: `url(${PHOTO_IVAN})`, filter: "blur(3px) brightness(0.35)" }}
+          className="absolute inset-0 bg-no-repeat bg-center"
+          style={{ backgroundImage: `url(${PHOTO_IVAN})`, backgroundSize: "40%", backgroundPosition: "right 5% center", filter: "brightness(0.45)" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#060d1e]/80 via-[#0a1628]/70 to-[#0a1628]/50" />
         <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(rgba(0,132,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,132,255,0.04) 1px,transparent 1px)", backgroundSize: "40px 40px" }} />
