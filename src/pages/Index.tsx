@@ -133,10 +133,10 @@ export default function Index() {
       {/* HERO */}
       <section id="hero" className="relative pt-28 pb-20 px-5 md:px-10 overflow-hidden min-h-screen flex items-center">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${PHOTO_IVAN})` }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110"
+          style={{ backgroundImage: `url(${PHOTO_IVAN})`, filter: "blur(3px) brightness(0.35)" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#060d1e]/95 via-[#0a1628]/85 to-[#0a1628]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#060d1e]/80 via-[#0a1628]/70 to-[#0a1628]/50" />
         <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(rgba(0,132,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,132,255,0.04) 1px,transparent 1px)", backgroundSize: "40px 40px" }} />
 
         <div className="max-w-6xl mx-auto w-full relative z-10">
@@ -147,7 +147,7 @@ export default function Index() {
                 <span className="text-xs font-body font-medium uppercase tracking-widest text-blue-200">Алгоритм Новикова</span>
               </div>
 
-              <h1 className="font-playfair font-black text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-up-1" style={{fontFamily: '"Playfair Display", serif'}}>
+              <h1 className="font-display font-black text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-6 animate-fade-up-1">
                 За <span className="text-brand text-glow">68 часов</span> упакую ваш бизнес так, чтобы Яндекс Карты и 2ГИС начали{" "}
                 <span className="text-brand">приводить клиентов</span>, а не просто показывать карточку.
               </h1>
