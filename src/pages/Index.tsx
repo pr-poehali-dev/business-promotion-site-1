@@ -323,12 +323,12 @@ export default function Index() {
           <p className="text-xs font-body font-semibold uppercase tracking-widest text-brand mb-4">3 направления</p>
           <h2 className="font-display font-black text-3xl md:text-4xl text-white mb-14">Алгоритм Новикова</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="card-hover rounded-2xl p-8 border border-blue-500/20 bg-white/5 backdrop-blur-sm">
+            <div className="card-hover rounded-2xl p-8 border border-blue-500/20 bg-white/5 backdrop-blur-sm flex flex-col">
               <div className="w-12 h-12 rounded-2xl bg-brand/20 flex items-center justify-center mb-6">
                 <Icon name="MapPin" size={22} className="text-brand" />
               </div>
               <h3 className="font-display font-bold text-xl text-white mb-4">Продвижение в Яндекс Картах и 2ГИС</h3>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col gap-3 flex-1">
                 {["SEO-описание и категории", "Атрибуты и витрина услуг", "Рост показов и звонков", "Усиление доверия к карточке"].map((item) => (
                   <li key={item} className="flex items-start gap-2.5">
                     <div className="w-1.5 h-1.5 rounded-full bg-brand mt-2 flex-shrink-0" />
@@ -336,15 +336,26 @@ export default function Index() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-6 pt-6 border-t border-white/10">
+                <p className="font-display font-black text-2xl text-white mb-4">14 800 ₽</p>
+                <a
+                  href="https://t.me/novikov_ivan?text=%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%20%D0%9A%D0%B0%D1%80%D1%82%D1%8B%20%D0%B8%202%D0%93%D0%98%D0%A1%20%D0%B7%D0%B0%2068%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center px-5 py-3 rounded-xl bg-brand text-white font-display font-bold text-sm hover:opacity-90 transition-opacity"
+                >
+                  Купить
+                </a>
+              </div>
             </div>
 
-            <div className="card-hover rounded-2xl p-8 border border-brand/40 bg-brand/10 backdrop-blur-sm relative overflow-hidden">
+            <div className="card-hover rounded-2xl p-8 border border-brand/40 bg-brand/10 backdrop-blur-sm relative overflow-hidden flex flex-col">
               <div className="absolute top-4 right-4 text-xs font-body font-semibold text-brand bg-brand/20 px-2.5 py-1 rounded-full">68 часов</div>
               <div className="w-12 h-12 rounded-2xl bg-brand/20 flex items-center justify-center mb-6">
                 <Icon name="Globe" size={22} className="text-brand" />
               </div>
               <h3 className="font-display font-bold text-xl text-white mb-4">Сайт за 68 часов</h3>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col gap-3 flex-1">
                 {["Современный адаптивный дизайн", "Структура под конверсию", "Форма заявки и логика блоков", "Базовая SEO-настройка"].map((item) => (
                   <li key={item} className="flex items-start gap-2.5">
                     <div className="w-1.5 h-1.5 rounded-full bg-brand mt-2 flex-shrink-0" />
@@ -352,16 +363,26 @@ export default function Index() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-6 pt-6 border-t border-white/10">
+                <p className="font-display font-black text-2xl text-white mb-4">14 800 ₽</p>
+                <a
+                  href="https://t.me/novikov_ivan?text=%D0%A1%D0%B0%D0%B9%D1%82%20%D0%B7%D0%B0%2068%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center px-5 py-3 rounded-xl bg-brand text-white font-display font-bold text-sm hover:opacity-90 transition-opacity"
+                >
+                  Купить
+                </a>
+              </div>
             </div>
 
-            <div className="card-hover rounded-2xl p-8 border border-blue-500/20 bg-white/5 backdrop-blur-sm">
+            <div className="card-hover rounded-2xl p-8 border border-blue-500/20 bg-white/5 backdrop-blur-sm flex flex-col">
               <div className="w-12 h-12 rounded-2xl bg-brand/20 flex items-center justify-center mb-6">
                 <Icon name="Star" size={22} className="text-brand" />
               </div>
               <h3 className="font-display font-bold text-xl text-white mb-1">Управление репутацией</h3>
               <p className="font-body text-xs text-brand mb-4 font-semibold uppercase tracking-wide">Системный рост отзывов и рейтинга</p>
-              <p className="font-body text-sm text-blue-100/60 mb-4">Персональные решения под вашу нишу и аудиторию.</p>
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 flex-1">
                 {REPUTATION_FEATURES.map((f) => (
                   <li key={f} className="flex items-start gap-2.5">
                     <Icon name="Check" size={13} className="text-brand mt-0.5 flex-shrink-0" />
@@ -369,8 +390,17 @@ export default function Index() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-5 p-3 rounded-xl bg-brand/15 border border-brand/30">
-                <p className="font-body text-xs text-brand font-semibold">Результат: больше доверия → больше обращений</p>
+              <div className="mt-6 pt-6 border-t border-white/10">
+                <p className="font-display font-black text-2xl text-white mb-1">от 35 000 ₽</p>
+                <p className="font-body text-xs text-blue-100/50 mb-4">Индивидуальный расчёт</p>
+                <a
+                  href="https://t.me/novikov_ivan?text=%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%20%D0%BF%D0%BE%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8E%20%D1%80%D0%B5%D0%BF%D1%83%D1%82%D0%B0%D1%86%D0%B8%D0%B5%D0%B9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center px-5 py-3 rounded-xl bg-brand text-white font-display font-bold text-sm hover:opacity-90 transition-opacity"
+                >
+                  Получить расчёт
+                </a>
               </div>
             </div>
           </div>
