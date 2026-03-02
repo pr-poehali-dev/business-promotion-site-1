@@ -468,10 +468,8 @@ export default function Index() {
               <h2 className="font-display font-black text-3xl md:text-4xl text-foreground mb-6 leading-tight">
                 Алгоритм работает, потому что я отвечаю за результат лично.
               </h2>
-              <p className="font-body text-slate-700 text-base leading-relaxed mb-6">
-                Я Иван Новиков — предприниматель, отец и счастливый муж.
-                Работаю системно и на долгосрочный результат.
-              </p>
+              <p className="font-body text-slate-700 text-base leading-relaxed mb-6">Новиков Иван - Маркетолог с опытом, счастливый отец  и любящий муж!
+</p>
 
               {/* Family values block */}
               <div className="relative rounded-2xl overflow-hidden mb-8 h-72">
