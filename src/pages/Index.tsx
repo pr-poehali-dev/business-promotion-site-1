@@ -428,7 +428,7 @@ export default function Index() {
 
               {/* Family values block */}
               <div className="relative rounded-2xl overflow-hidden mb-8 h-72">
-                <img src="https://cdn.poehali.dev/files/f2f2bfac-ba01-4706-893c-9c1769b67338.png" alt="Семья Новиковых" className="w-full h-full object-cover object-top" />
+                <img src="https://cdn.poehali.dev/files/f2f2bfac-ba01-4706-893c-9c1769b67338.png" alt="Семья Новиковых" className="w-full h-full object-cover" style={{objectPosition: "center 15%"}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <p className="font-display font-bold text-white text-sm">Семья — главная ценность</p>
