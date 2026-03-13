@@ -327,7 +327,7 @@ export default function Index() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="py-24 px-5 md:px-10 dark-section grid-pattern">
+      <section id="services" className="py-24 px-5 md:px-10 dark-section grid-pattern bg-[#00000000]">
         <div className="max-w-6xl mx-auto">
           <p className="text-xs font-body font-semibold uppercase tracking-widest text-brand mb-4">3 направления</p>
           <div className="inline-block mb-14">
