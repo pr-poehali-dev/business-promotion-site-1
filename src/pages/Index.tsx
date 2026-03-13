@@ -332,7 +332,7 @@ export default function Index() {
           <p className="text-xs font-body font-semibold uppercase tracking-widest text-brand mb-4">3 направления</p>
           <div className="inline-block mb-14">
             <h2 className="font-display font-black text-3xl md:text-4xl text-white relative">
-              <span className="relative z-10">Алгоритм Новикова</span>
+              <span className="relative z-10 text-[#007ef5]">Алгоритм Новикова</span>
               <span className="absolute -inset-x-4 -inset-y-2 rounded-2xl bg-brand/15 border border-brand/30 blur-[1px]" />
             </h2>
           </div>
